@@ -1,0 +1,63 @@
+// =====================================================
+// 🧠 COMO JAVASCRIPT FUNCIONA - BÁSICO E SIMPLES
+// =====================================================
+
+// 1️⃣ VARIÁVEIS - como "caixas" que guardam valores
+let nome = "João";           // STRING (texto)
+let idade = 25;              // NUMBER (número)
+let ehEstudante = true;      // BOOLEAN (verdadeiro/falso)
+let notas = [10, 8, 9];      // ARRAY (lista)
+let pessoa = {               // OBJECT (dicionário)
+    nome: "Maria",
+    idade: 30
+};
+
+// 2️⃣ FUNÇÕES - blocos de código reutilizáveis
+function saudacao(nome) {
+    console.log("Olá, " + nome + "! 👋");
+}
+
+// 3️⃣ CONSOLE - onde você VE os resultados (F12 no navegador)
+console.log("=== INÍCIO DO PROGRAMA ===");
+console.log("Meu nome:", nome);
+console.log("Minha idade:", idade);
+saudacao(nome);              // CHAMA a função
+
+// 4️⃣ CONDIÇÕES - toma decisões (if/else)
+if (idade >= 18) {
+    console.log("✅ Maior de idade");
+} else {
+    console.log("❌ Menor de idade");
+}
+
+// 5️⃣ LOOP - repete ações (for)
+console.log("📚 Minhas notas:");
+for (let i = 0; i < notas.length; i++) {
+    console.log("Nota " + (i+1) + ":", notas[i]);
+}
+
+// 6️⃣ OBJETOS - trabalhe com dados complexos
+console.log("👤 Pessoa:", pessoa.nome, "tem", pessoa.idade, "anos");
+
+// 7️⃣ FUNÇÕES AVANÇADAS - com múltiplas operações
+function calcularMedia(notas) {
+    let soma = 0;
+    for (let i = 0; i < notas.length; i++) {
+        soma += notas[i];    // SOMA as notas
+    }
+    return soma / notas.length;  // RETORNA a média
+}
+
+let media = calcularMedia(notas);
+console.log("📊 Média final:", media);
+
+// 8️⃣ ARROW FUNCTIONS - jeito moderno de criar funções
+const dobrar = (numero) => numero * 2;
+console.log("🔢 10 dobrado é:", dobrar(10));
+
+// 9️⃣ TRATAMENTO DE ERROS - try/catch
+try {
+    let resultado = 10 / 0;  // ERRO! Divisão por zero
+} catch (erro) {
+    console.log("❌ Erro pego:", erro.message);
+}
