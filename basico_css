@@ -1,0 +1,114 @@
+/* =====================================================
+🧠 COMO CSS FUNCIONA - BÁSICO E SIMPLES
+===================================================== */
+
+/* 1️⃣ SELETOR DE ELEMENTO - aplica estilo em TODOS os elementos HTML */
+body {
+    font-family: Arial, sans-serif;  /* Fonte padrão */
+    margin: 0;                       /* Remove margem padrão */
+    padding: 20px;                   /* Espaçamento interno */
+    background-color: #f0f0f0;       /* Cor de fundo cinza claro */
+    line-height: 1.6;                /* Espaço entre linhas */
+}
+
+/* 2️⃣ SELETOR DE CLASSE - usa "." + nome da classe (.minhaClasse) */
+.botao {
+    background-color: #007acc;       /* Azul principal */
+    color: white;                    /* Texto branco */
+    padding: 12px 24px;              /* Espaçamento interno (cima/baixo, esquerda/direita) */
+    border: none;                    /* Remove borda padrão */
+    border-radius: 8px;              /* Bordas arredondadas */
+    cursor: pointer;                 /* Mãozinha no mouse */
+    font-size: 16px;                 /* Tamanho da fonte */
+    transition: all 0.3s ease;       /* Animação suave em mudanças */
+}
+
+.botao:hover {                       /* :hover = quando passa o mouse por cima */
+    background-color: #005a99;       /* Azul mais escuro */
+    transform: translateY(-2px);     /* Levanta botão levemente */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra */
+}
+
+/* 3️⃣ SELETOR DE ID - usa "#" + id do elemento (#meuId) */
+#titulo-principal {
+    color: #333;                     /* Cinza escuro */
+    text-align: center;              /* Centraliza texto */
+    font-size: 2.5em;                /* 2.5x maior que normal */
+    margin-bottom: 30px;             /* Espaço embaixo */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Sombra no texto */
+}
+
+/* 4️⃣ SELETOR DE FILHO - pai > filho direto */
+.caixa > .item {
+    background: white;               /* Fundo branco */
+    margin: 10px 0;                  /* Espaço em cima/embaixo */
+    padding: 15px;                   /* Espaçamento interno */
+    border-radius: 10px;             /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* 5️⃣ PSEUDO-CLASSES - estados especiais (:active, :focus, etc) */
+input:focus {
+    outline: 2px solid #007acc;      /* Borda azul quando foca */
+    outline-offset: 2px;             /* Espaço da borda */
+}
+
+/* 6️⃣ MEDIA QUERIES - RESPONSIVO (adapta para celular) */
+@media (max-width: 768px) {          /* Se tela ≤ 768px (celular/tablet) */
+    body {
+        padding: 10px;               /* Menos padding em telas pequenas */
+    }
+    
+    #titulo-principal {
+        font-size: 2em;              /* Título menor em celular */
+    }
+    
+    .botao {
+        width: 100%;                 /* Botão ocupa tela toda */
+        padding: 15px;               /* Mais alto para toque */
+    }
+}
+
+/* 7️⃣ FLEXBOX - layout horizontal/vertical fácil */
+.container {
+    display: flex;                   /* Ativa Flexbox */
+    justify-content: center;         /* Centraliza horizontal */
+    align-items: center;             /* Centraliza vertical */
+    flex-direction: column;          /* Empilha verticalmente */
+    min-height: 100vh;               /* Altura mínima = tela toda */
+    gap: 20px;                       /* Espaço entre itens */
+}
+
+/* 8️⃣ GRID - layout em grade */
+.grid-exemplo {
+    display: grid;                   /* Ativa CSS Grid */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 colunas iguais */
+    gap: 15px;                       /* Espaço entre células */
+}
+
+/* 9️⃣ ANIMAÇÕES - movimento suave */
+@keyframes piscar {
+    0%, 100% { opacity: 1; }         /* Totalmente visível */
+    50% { opacity: 0.3; }            /* Meio transparente */
+}
+
+.piscando {
+    animation: piscar 1s infinite;   /* Executa animação infinitamente */
+}
+
+/* 🔟 VARIÁVEIS CSS - reutilize valores (como constantes) */
+:root {
+    --cor-principal: #007acc;
+    --cor-sucesso: #28a745;
+    --cor-erro: #dc3545;
+    --espacamento: 20px;
+}
+
+.botao-sucesso {
+    background-color: var(--cor-sucesso); /* Usa variável */
+    padding: var(--espacamento);
+}
+
+.botao-erro {
+    background-color: var(--cor-erro);
+}
