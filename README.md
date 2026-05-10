@@ -211,3 +211,44 @@ Dicionário
 +---+------------+----------------------------------------------------------+----------------------------------------------------------------------------------------------------+
 | Z |            |                                                          |                                                                                                    |
 +---+------------+----------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+
+
+.. |js| image:: https://api.iconify.design/simple-icons:javascript.svg?color=%23F0DB4F
+   :alt: Javascript
+.. |ts| image:: https://api.iconify.design/simple-icons:typescript.svg?color=%233178c6
+   :alt: TypeScript
+.. |html| image:: https://api.iconify.design/simple-icons:html5.svg?color=%23E34C26
+   :alt: HTML
+.. |css| image:: https://api.iconify.design/simple-icons:css.svg?color=%23663399
+   :alt: CSS [rebecca purple]
+.. |haml| image:: https://api.iconify.design/vscode-icons:file-type-haml.svg?color=%233e3e29
+   :alt: haml
+.. |coffee| image:: https://api.iconify.design/simple-icons:coffeescript.svg?color=%233e2723
+   :alt: Coffee Script
+.. |vue| image:: https://api.iconify.design/simple-icons:vuedotjs.svg?color=%2341b883
+   :alt: Vue
+.. |react| image:: https://api.iconify.design/simple-icons:react.svg?color=%2361DBFB
+   :alt: React
+.. |preact| image:: https://api.iconify.design/simple-icons:preact.svg?color=%23673ab8
+   :alt: Preact
+.. |sass| image:: https://api.iconify.design/simple-icons:sass.svg?color=%23cf649a
+   :alt: Sass/Scss
+.. |postcss| image:: https://api.iconify.design/simple-icons:postcss.svg?color=%23dd3a0a
+   :alt: PostCSS
+.. |tailwind| image:: https://api.iconify.design/simple-icons:tailwindcss.svg?color=%2300bcff
+   :alt: Tailwind
+.. |svelte| image:: https://api.iconify.design/simple-icons:svelte.svg?color=%23ff3e00
+   :alt: Svelte
+.. |webcomp| image:: https://api.iconify.design/simple-icons:webcomponentsdotorg.svg?color=%23def021
+   :alt: Web Components
+.. |fav| image:: https://api.iconify.design/material-symbols:favorite.svg?color=%23ff0000
+   :alt: meu favorito
+.. |ofi| image:: https://api.iconify.design/ic:sharp-location-on.svg?color=%23ff0000
+   :alt: site oficial
+
+.. |fav-s| image:: https://api.iconify.design/material-symbols:favorite.svg?color=%23ff0000
+   :alt: meu favorito
+   :height: 12px
+.. |ofi-s| image:: https://api.iconify.design/ic:sharp-location-on.svg?color=%23ff0000
+   :alt: site oficial
+   :height: 12px
